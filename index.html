@@ -10,125 +10,113 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>AutoSold</title>
+    <title>Document</title>
   </head>
   <body>
     <nav>
-      <img src="Slide 16_9 - 1.png" alt="" />
+      <img src="logo-resto-white.jpg" alt="" />
       <div>
-        <a href="#main">Home</a>
-        <a href="#sale">on Sale</a>
-        <a href="#contacts">Contacts</a>
-        <a href="#about">About Us</a>
+        <a href="">Home</a>
+        <a href="">Order</a>
+        <a href="">Profile</a>
       </div>
-      <input type="text" placeholder="Cari apa?" />
+      <input type="text" placeholder="Cari Makanan" />
     </nav>
-    <section id="main">
-      <div>
-        <h1>Lebih <i style="color: #6439ff">Gampang!</i></h1>
-        <p>Solusi Cepat dan Aman untuk Beli Mobil Impian Anda Tanpa Ribet!</p>
-      </div>
-      <img src="pngimg.com - porsche_PNG10603.png" alt="" />
+    <section class="header">
+      <img src="check.png" alt="" />
+      <h1>Terima kasih telah memesan!</h1>
+      <p>Pesanan anda akan diproses, silahkan menyelesaikan pembayaran anda</p>
     </section>
-    <section class="mid">
-      <img src="sec2.png" alt="" />
-      <div>
-        <h2>Mobil Murah Berkualitas</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, vero!
-        </p>
-      </div>
-      <div>
-        <h2>Kondisi up to 90%</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates,
-          minus!
-        </p>
-      </div>
-      <div>
-        <h2>Semua jenis mobil, ADA!</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates,
-          minus!
-        </p>
-      </div>
-    </section>
-    <section id="sale">
-      <h1>On Sale!</h1>
-      <div class="sale1">
-        <div>
-          <img
-            src="2018_Nissan_GT-R_Premium_in_Super_Silver,_Front_Right,_10-11-2022.jpg"
-            alt=""
-          />
-          <h2>Nissan GTR</h2>
-          <p>Rp2.000.000</p>
-          <a href="">Details</a>
-        </div>
-        <div>
-          <img
-            src="2018_Nissan_GT-R_Premium_in_Super_Silver,_Front_Right,_10-11-2022.jpg"
-            alt=""
-          />
-          <h2>Nissan GTR</h2>
-          <p>Rp2.000.000</p>
-          <a href="">Details</a>
-        </div>
-        <div>
-          <img
-            src="2018_Nissan_GT-R_Premium_in_Super_Silver,_Front_Right,_10-11-2022.jpg"
-            alt=""
-          />
-          <h2>Nissan GTR</h2>
-          <p>Rp2.000.000</p>
-          <a href="">Details</a>
-        </div>
-        <div>
-          <img
-            src="2018_Nissan_GT-R_Premium_in_Super_Silver,_Front_Right,_10-11-2022.jpg"
-            alt=""
-          />
-          <h2>Nissan GTR</h2>
-          <p>Rp2.000.000</p>
-          <a href="">Details</a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <h1>About Us</h1>
-      <div class="about1">
-        <img src="1726361872870.png" alt="" />
-        <div>
-          <h2>Founder <i style="color: #6439ff">Auto</i> Sold</h2>
+    <section class="main">
+      <section class="left">
+        <div class="orderid">
+          <h1>Hi, Azam</h1>
           <p>
-            Kalingga Dwindra membangun website ini untuk menyediakan layanan
-            beli mobil dengan mudah, aman, dan cepat, menawarkan berbagai
-            pilihan kendaraan sesuai kebutuhan Anda, serta proses transaksi yang
-            transparan dan tanpa ribet.
+            Order ID anda adalah
+            <strong style="color: #6439ff">2309106054</strong>
           </p>
         </div>
-      </div>
+        <div class="detailpel">
+          <h1>Detail Pelanggan</h1>
+          <div>
+            <h2>Nama Pelanggan</h2>
+            <p>Abdullah Azam</p>
+          </div>
+          <div>
+            <h2>Alamat Pelanggan</h2>
+            <p>Jl. Merdeka No.15, Kota Balikpapan</p>
+          </div>
+          <div>
+            <h2>Tanggal Pemesanan</h2>
+            <input type="date" />
+          </div>
+          <div>
+            <h2>Nama Pelayan</h2>
+            <p>Kalingga Dwindra Putraka</p>
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <div class="order">
+          <h1>Order Details</h1>
+          <div class="list">
+            <div class="gnd">
+              <img src="nasi-goreng.jpeg" alt="" />
+              <div>
+                <h3>Nasi Goreng Spesial</h3>
+                <p>Rp25.000</p>
+              </div>
+            </div>
+            <input type="number" min="1" />
+          </div>
+          <div class="list">
+            <div class="gnd">
+              <img src="es-teh-manis.jpeg" alt="" />
+              <div>
+                <h3>Es Teh Manis</h3>
+                <p>Rp5.000</p>
+              </div>
+            </div>
+            <input type="number" min="1" />
+          </div>
+          <div class="totalpes">
+            <p>Total Pesanan</p>
+            <p>Rp30.000</p>
+          </div>
+          <div class="pajak">
+            <p>Pajak</p>
+            <p>Rp2.000</p>
+          </div>
+          <div class="total">
+            <p>Order Total</p>
+            <p>Rp32.000</p>
+          </div>
+          <div class="metode">
+            <input type="radio" name="metode" id="BCA" /><label for="BCA"
+              >BCA</label
+            >
+            <input type="radio" name="metode" id="BRI" /><label for="BRI"
+              >BRI</label
+            >
+            <input type="radio" name="metode" id="GOPAY" /><label for="GOPAY"
+              >GOPAY</label
+            >
+            <input type="radio" name="metode" id="OVO" /><label for="OVO"
+              >OVO</label
+            >
+          </div>
+          <a href="">Pilih</a>
+        </div>
+      </section>
     </section>
-    <section class="footer">
-      <div class="logo">
-        <img src="Slide 16_9 - 1.png" alt="" />
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div id="contacts">
-        <h1>Contacts</h1>
-        <p>08XXXXXXXXXX</p>
-      </div>
-      <div class="social">
-        <h1>Social Media</h1>
-        <a href="https://www.instagram.com/kaldwindra/" target="_blank"
-          ><img src="ins.png" alt=""
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/kalingga-dwindra-putraka-0191a920b/"
-          target="_blank"
-          ><img src="link.png" alt=""
-        /></a>
-      </div>
-    </section>
+    <footer>
+      <h2>Kalingga Dwindra Putraka</h2>
+      <p>2309106054</p>
+      <a
+        href="https://classroom.google.com/u/0/c/NzEwMjM1MTUyNDc0/a/NzA2MTI4OTQyNjky/details"
+        target="_blank"
+        >Posttest 2</a
+      >
+    </footer>
   </body>
 </html>
