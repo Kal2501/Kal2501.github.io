@@ -171,7 +171,7 @@ nav input {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 input[type="radio"] {
   display: none;
