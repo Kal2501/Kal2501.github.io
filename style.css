@@ -272,12 +272,12 @@ footer a:hover {
   }
   label {
     height: 2rem;
-    width: 5.5rem;
+    width: 4.85rem;
   }
   .right {
     grid-row: 4;
     grid-column: 2;
-    width: 27.5rem;
+    width: 25rem;
   }
   .metode {
     font-size: 0.75rem;
@@ -287,9 +287,9 @@ footer a:hover {
   }
   footer {
     padding: 2rem;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
   footer a {
-    width: 3.75rem;
+    width: 4.75rem;
   }
 }
