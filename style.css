@@ -259,10 +259,10 @@ footer a:hover {
     height: 2rem;
   }
   .header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .header p {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
   .main {
     display: grid;
