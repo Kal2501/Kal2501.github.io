@@ -64,6 +64,7 @@ nav input {
 }
 .main {
   background-image: linear-gradient(white, #e0d7ff70);
+  background-size: contain;
   font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 1fr 2fr 0.25fr 3fr 1fr;
@@ -179,7 +180,9 @@ input[type="radio"] {
 label {
   border: 1px solid #6439ff;
   border-radius: 0.5rem;
-  padding: 1rem 3rem;
+  height: 3rem;
+  width: 8rem;
+  justify-content: center;
   display: flex;
   align-items: center;
   color: #6439ff;
@@ -206,6 +209,7 @@ input[type="radio"]:checked + label {
   padding: 0.5rem;
   border-radius: 0.5rem;
   color: white;
+  transition: 0.2s;
 }
 .order a:hover {
   display: flex;
@@ -216,6 +220,7 @@ input[type="radio"]:checked + label {
   border-radius: 0.5rem;
   color: white;
   box-shadow: 0 0 5px #6439ff;
+  transition: 0.2s;
 }
 footer {
   font-family: "Poppins", sans-serif;
@@ -223,12 +228,12 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
 }
 footer a {
   background-color: white;
   color: #6439ff;
   border: 1px solid #6439ff;
+  width: 6rem;
   margin-top: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -236,9 +241,55 @@ footer a {
 }
 footer a:hover {
   background-color: #6439ff;
+  width: 6rem;
   color: white;
   margin-top: rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+  nav input {
+    font-size: 0.5rem;
+    width: 4rem;
+    height: 2rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header p {
+    font-size: 0.75rem;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.25fr 2fr 0.15fr 2fr 0.25fr;
+    width: 100%;
+  }
+  label {
+    height: 2rem;
+    width: 5.5rem;
+  }
+  .right {
+    grid-row: 4;
+    grid-column: 2;
+    width: 27.5rem;
+  }
+  .metode {
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  footer {
+    padding: 2rem;
+    font-size: 0.5rem;
+  }
+  footer a {
+    width: 3.75rem;
+  }
 }
