@@ -178,7 +178,7 @@ main h1 {
 }
 .catalog {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
