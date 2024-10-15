@@ -1,0 +1,56 @@
+:root {
+  --base-color: white;
+  --text-color: black;
+  --secondary-text: rgb(49, 49, 49);
+  --button: rgb(236, 236, 236);
+  --accent-text: rgb(255, 255, 255);
+  --accent-color: #ff4d00;
+}
+.darkmode {
+  --base-color: rgb(34, 34, 34);
+  --text-color: white;
+  --secondary-text: rgb(205, 205, 205);
+  --button: rgb(55, 55, 55);
+  --accent-text: white;
+  --accent-color: rgb(255, 77, 0);
+}
+.orders-container {
+  padding: 7rem;
+  color: var(--text-color);
+  overflow: auto;
+  min-height: 200px;
+  min-width: 200px;
+  width: 100%;
+}
+.orders-container h1 {
+  font-size: 5rem;
+  letter-spacing: -0.25rem;
+  margin-bottom: 2rem;
+}
+.orders-container table {
+  width: 100%;
+  border-radius: 2rem;
+  background-color: var(--button);
+}
+.orders-container table td {
+  padding: 2rem;
+}
+.orders-container table th {
+  padding: 2rem;
+  border-bottom: 1px solid var(--accent-color);
+}
+.orders-container a svg {
+  fill: var(--text-color);
+}
+.orders-container a g {
+  fill: var(--text-color);
+}
+@media screen and (max-width: 900px) {
+  .orders-container {
+    padding: 7rem 2rem;
+  }
+  .orders-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
