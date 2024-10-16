@@ -22,32 +22,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $check = getimagesize($_FILES["gambar"]["tmp_name"]);
     if ($check !== false) {
-        echo "File adalah gambar - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File bukan gambar.";
-        $uploadOk = 0;
-    }
-
-    if ($_FILES["gambar"]["size"] > 5000000) {
-        echo "Maaf, ukuran file terlalu besar.";
-        $uploadOk = 0;
-    }
-
-    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
-        echo "Maaf, hanya file JPG, JPEG, PNG & GIF yang diperbolehkan.";
-        $uploadOk = 0;
-    }
-
-    if ($uploadOk == 0) {
-        echo "Maaf, file tidak terupload.";
-    } else {
-        if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $targetFile)) {
-            $gambar = $timeStamp . "." . $imageFileType;
-            echo "<script>alert('Gambar " . htmlspecialchars($gambar) . " berhasil diupload');</script>";
-        } else {
-            echo "Maaf, terjadi kesalahan saat mengupload file.";
+        if ($_FILES["gambar"]["size"] <= 5000000) {
+            if ($imageFileType == "jpg" || $imageFileType == "png" || $imageFileType == "jpeg" || $imageFileType == "gif") {
+                if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $targetFile)) {
+                    echo "<script>alert('Gambar " . htmlspecialchars($gambar) . " berhasil diupload');</script>";
+                    $gambar = $timeStamp . "." . $imageFileType; // Set gambar baru
+                } 
+                else{
+                    echo "<script>alert('Maaf, terjadi kesalahan saat mengupload file.');</script>";
+                }
+            } 
+            else{
+                echo "<script>alert('Maaf, hanya file JPG, JPEG, PNG & GIF yang diperbolehkan.');</script>";
+                $uploadOk = 0;
+            }
+        } 
+        else{
+            echo "<script>alert('Maaf, ukuran file terlalu besar.');</script>";
+            $uploadOk = 0;
         }
+    } 
+    else{
+        echo "<script>alert('File bukan gambar.');</script>";
+        $uploadOk = 0;
     }
 
     $stmt = $conn->prepare("INSERT INTO orders (nama, jumlah, alamat, price, gambar, pembayaran) VALUES (?, ?, ?, ?, ?, ?)");

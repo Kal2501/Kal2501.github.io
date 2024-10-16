@@ -86,6 +86,22 @@ form {
   border-radius: 1rem;
   outline: none;
 }
+.input-gambar-orders {
+  margin-top: 1rem;
+  background-color: var(--button);
+  color: var(--text-color);
+  border: none;
+  padding: 1rem;
+  width: 84.5vw;
+  border-radius: 1rem;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-gambar-orders svg g {
+  stroke: var(--text-color);
+}
 #price {
   display: none;
 }
